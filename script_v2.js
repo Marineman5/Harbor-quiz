@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resultScreen.classList.add('hidden');
         // quizScreen.classList.remove('hidden'); // 画面切り替えを遅延
 
-        const startSound = new Audio('「さあ、いくぞ！」.mp3');
+        const startSound = new Audio('start_game.mp3');
         startSound.play();
 
         startSound.onended = () => {
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 500); // Animation duration is 0.5s
 
             // Play punch sound
-            const punchSound = new Audio('重いパンチ2.mp3');
+            const punchSound = new Audio('wrong_answer.mp3');
             punchSound.play();
 
             if (mistakes >= 3) {
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('ゲームオーバー！');
 
         // Play game over sound
-        const gameOverSound = new Audio('「ぐああーーっ！」.mp3');
+        const gameOverSound = new Audio('game_over.mp3');
         gameOverSound.play();
 
         // Set NPC image to rage expression
