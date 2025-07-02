@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showPositive() {
         console.log('正解！');
-        const correctSound = new Audio('決定ボタンを押す53.mp3');
+        const correctSound = new Audio('correct_answer.mp3');
         correctSound.play();
         // TODO: Implement positive feedback UI (e.g., temporary happy face, sound)
     }
